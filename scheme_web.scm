@@ -42,6 +42,6 @@
 
 (serve/servlet sayac-sayfasi
                #:servlet-regexp #rx""  
-               #:port 8080     
-               #:listen-ip "0.0.0.0"        
+               #:port 8080             
+               #:listen-ip "0.0.0.0"   
                #:command-line? #t)
