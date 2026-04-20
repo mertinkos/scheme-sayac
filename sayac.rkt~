@@ -17,10 +17,6 @@
        (h1 "CENG212 Finali Geri Sayımı")
        (div ((id "sayac")) "Süre Hesaplanıyor...")
        (h2 "Scheme'den kurtulmamıza kalan süre...")
-       (p (a ((href "https://github.com/mertinkos/scheme-sayac/")
-         (target "_blank")
-         (style "color: #95a5a6; font-size: 0.8em; text-decoration: none;"))
-        "📦 GitHub'da Görüntüle"))
        (script "
          const hedefTarih = new Date('June 22, 2026 09:45:00').getTime();
          const x = setInterval(function() {
