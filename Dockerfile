@@ -8,4 +8,4 @@ RUN raco pkg install --auto web-server-lib
 
 EXPOSE 8080
 
-CMD ["racket", "sayac.rkt"]
+CMD ["racket", "scheme_web.scm"]
