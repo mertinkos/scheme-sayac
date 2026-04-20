@@ -6,7 +6,7 @@
     (response / xexpr
       `(html
      (head 
-      (title "Scheme Sayacı")
+      (title "Kurtuluş Sayacı")
       (style "
         body { background-color: #f0f0f0; font-family: sans-serif; text-align: center; padding-top: 100px; }
         h1 { color: #2c3e50; }
@@ -14,9 +14,10 @@
         h2 { color: #7f8c8d; }
       "))
      (body 
-      (h1 "Scheme Sayacı")
+      (h1 "CENG212 Finali Geri Sayımı")
       (div ((id "sayac")) "Süre Hesaplanıyor...")
       (h2 "Scheme'den kurtulmamıza kalan süre...")
+      (p "09:45'te kalemler bırakılır, özgürlük başlar!")
 
       (script "
         const hedefTarih = new Date('June 22, 2026 09:45:00').getTime();
@@ -40,6 +41,7 @@
         }, 1000);
       ")))))
 
+;; SUNUCUYU BAŞLAT
 (serve/servlet sayac-sayfasi
                #:servlet-regexp #rx""  
                #:port 8080             
