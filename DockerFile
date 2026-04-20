@@ -2,7 +2,7 @@ FROM racket/racket:8.12-full
 
 WORKDIR /app
 
-COPY sayac.rkt .
+COPY scheme_web.scm .
 
 RUN raco pkg install --auto web-server-lib
 
