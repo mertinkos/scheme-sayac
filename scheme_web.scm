@@ -1,10 +1,10 @@
 #lang racket
-(require web-server/servlet-env
-         web-server/http)
+  (require web - server / servlet - env
+         web - server / http)
 
-(define (sayac-sayfasi request)
-  (response/xexpr
-   `(html
+  (define(sayac - sayfasi request)
+    (response / xexpr
+      `(html
      (head 
       (title "Scheme Sayacı")
       (style "
@@ -42,5 +42,6 @@
 
 (serve/servlet sayac-sayfasi
                #:servlet-regexp #rx""  
-               #:port 8080             
+               #:port 8080     
+               #:listen-ip "0.0.0.0"        
                #:command-line? #t)
