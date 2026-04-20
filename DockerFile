@@ -1,0 +1,11 @@
+FROM racket/racket:8.12-full
+
+WORKDIR /app
+
+COPY sayac.rkt .
+
+RUN raco pkg install --auto web-server-lib
+
+EXPOSE 8080
+
+CMD ["racket", "sayac.rkt"]
