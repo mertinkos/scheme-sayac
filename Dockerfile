@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY scheme_web.scm .
 
-RUN raco pkg install --auto web-server-lib
-
 EXPOSE 8080
 
 CMD ["racket", "scheme_web.scm"]
