@@ -1,9 +1,10 @@
-FROM racket/racket:8.12-full
+FROM racket/racket:8.14
 
 WORKDIR /app
+COPY sayac.rkt .
 
-COPY scheme_web.scm .
+RUN raco pkg install --auto web-server-lib
 
-EXPOSE 8080
+EXPOSE 10000
 
-CMD ["racket", "scheme_web.scm"]
+CMD ["racket", "sayac.rkt"]
